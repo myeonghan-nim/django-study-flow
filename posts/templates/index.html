@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+  <h3 class="m-5">made posts</h3>
+
+  {% for post in posts %}
+    <p class="m-5">{{post.title}} : {{post.content}}</p>
+  {% endfor %}
+  
+{% endblock %}

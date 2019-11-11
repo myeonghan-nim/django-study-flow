@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block body %}
+
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+  <h1 class="m-5">cute cat</h1>
+  
+  <img src="{% static 'image/test.jpg' %}" alt="" class="m-5">
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+
+  <h3 class="m-5">here is post ping</h3>
+
+  <form action="/post-pong/" method="post" class="m-5">
+    <!-- use CSRF token to protect CSRF attack -->
+    {% csrf_token %}
+    <input type="text" name="username">
+    <input type="password" name="password">
+    <input type="submit" value="login">
+  </form>
+
+{% endblock %}
