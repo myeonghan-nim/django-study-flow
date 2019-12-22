@@ -1,6 +1,6 @@
 # README
 
-## Load static files in Django HTML
+## Load static files in django HTML
 
 ```django
 {% extends 'base.html' %}
