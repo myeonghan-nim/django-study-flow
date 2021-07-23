@@ -1,17 +1,10 @@
 from django.shortcuts import render
-from .models import Post
 
-# Create your views here.
+from .models import Post
 
 
 def index(request):
-
-    posts = Post.objects.all()
-
-    context = {
-        'posts': posts
-    }
-
+    context = {'posts': Post.objects.all()}
     return render(request, 'index.html', context)
 
 
@@ -20,14 +13,8 @@ def new(request):
 
 
 def create(request):
-
-    title = request.GET.get('title')
-    content = request.GET.get('content')
-    
     post = Post()
-    post.title = title
-    post.content = content
+    post.title = request.GET.get('title')
+    post.content = request.GET.get('content')
     post.save()
-
     return render(request, 'create.html')
-    
