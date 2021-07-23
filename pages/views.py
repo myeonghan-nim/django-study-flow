@@ -1,23 +1,15 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 
 def ping(request):
     return render(request, 'ping.html')
 
 
 def pong(request):
-
-    # normal request informations are included in GET
-    user_name = request.GET.get('name')
-    user_age = request.GET.get('age')
-
     context = {
-        'user_name': user_name,
-        'user_age': user_age,
+        'user_name': request.GET.get('name'),
+        'user_age': request.GET.get('age'),
     }
-
     return render(request, 'pong.html', context)
 
 
@@ -26,16 +18,10 @@ def post_ping(request):
 
 
 def post_pong(request):
-
-    # post request informations are included in POST
-    username = request.POST.get('username')
-    password = request.POST.get('password')
-
     context = {
-        'username': username,
-        'password': password,
+        'username': request.POST.get('username'),
+        'password': request.POST.get('password'),
     }
-
     return render(request, 'post_pong.html', context)
 
 
