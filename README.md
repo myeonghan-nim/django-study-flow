@@ -1,4 +1,4 @@
-# README
+# advanced
 
 ## Load static files in django HTML
 
@@ -8,11 +8,10 @@
 {% load static %}
 ```
 
-## Build DBs in python
+## Build DB in django
 
 ```bash
 $ python manage.py makemigrations
 
 $ python manage.py migrate
 ```
-
