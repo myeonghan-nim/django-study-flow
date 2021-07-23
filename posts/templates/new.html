@@ -1,13 +1,10 @@
 {% extends 'base.html' %}
 
 {% block body %}
-
-  <h3 class="m-5">here is new</h3>
-
+  <h3 class="m-5">CREATE POST</h3>
   <form action="/posts/create/" class="m-5">
     <input type="text" name="title">
     <input type="text" name="content">
     <input type="submit">
   </form>
-  
-{% endblock %}
+ {% endblock %}
