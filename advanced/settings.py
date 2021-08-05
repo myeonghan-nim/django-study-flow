@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
-    'pages',
-    'posts',
+    'page',
+    'post',
     'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
