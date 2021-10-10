@@ -4,7 +4,6 @@
 
 ```django
 {% extends 'base.html' %}
-
 {% load static %}
 ```
 
