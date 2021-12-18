@@ -1,13 +1,13 @@
 # Study: flow
 
-## load statics in django html
+## load static in django html
 
 ```django
 {% extends 'base.html' %}
 {% load static %}
 ```
 
-## set DB
+## set database
 
 ```bash
 python manage.py makemigrations
