@@ -1,4 +1,4 @@
-# Study: django flow
+# Study: flow
 
 ## load statics in django html
 
