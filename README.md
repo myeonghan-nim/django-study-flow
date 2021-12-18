@@ -1,4 +1,4 @@
-# Study: django advanced
+# Study: django flow
 
 ## load statics in django html
 
@@ -10,7 +10,6 @@
 ## set DB
 
 ```bash
-$ python manage.py makemigrations
-
-$ python manage.py migrate
+python manage.py makemigrations
+python manage.py migrate
 ```
