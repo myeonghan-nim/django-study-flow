@@ -1,13 +1,13 @@
-# advanced
+# Study: django advanced
 
-## Load static files in django HTML
+## load statics in django html
 
 ```django
 {% extends 'base.html' %}
 {% load static %}
 ```
 
-## Build DB in django
+## set DB
 
 ```bash
 $ python manage.py makemigrations
